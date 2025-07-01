@@ -1,8 +1,9 @@
+import './App.css';
 import ApiComponent from './Components/ApiComponent';
 
 function App() {
   return (
-    <div style={{ padding: '20px' }}>
+    <div className="app-container">
       <h1>Cat Facts App</h1>
       <ApiComponent />
     </div>

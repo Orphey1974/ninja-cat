@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './ApiComponent.css';
 
 const ApiComponent = () => {
   const [data, setData] = useState(null);
@@ -18,7 +19,7 @@ const ApiComponent = () => {
       const result = await response.json();
       setData(result);
     } catch (err) {
-      setError(err.message);
+      setError(err instanceof Error ? err.message : String(err));
     } finally {
       setLoading(false);
     }
@@ -31,13 +32,13 @@ const ApiComponent = () => {
       </button>
 
       {data && (
-        <div style={{ background: 'green', color: 'white', padding: '10px', margin: '10px 0' }}>
+        <div className="cat-facts-data">
           <pre>{JSON.stringify(data, null, 2)}</pre>
         </div>
       )}
 
       {error && (
-        <div style={{ background: 'red', color: 'white', padding: '10px', margin: '10px 0' }}>
+        <div className="cat-facts-error">
           Error: {error}
         </div>
       )}

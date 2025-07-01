@@ -1,0 +1,13 @@
+.cat-facts-data {
+  background: green;
+  color: white;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.cat-facts-error {
+  background: red;
+  color: white;
+  padding: 10px;
+  margin: 10px 0;
+}
