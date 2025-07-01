@@ -1,0 +1,63 @@
+### Logs & Cache ###
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.sass-cache/
+.eslintcache
+.vite/          # Vite cache
+.parcel-cache/  # (если не используется Parcel)
+.cache/         # (актуально для некоторых инструментов)
+
+### Dependencies ###
+node_modules/
+**/node_modules/*
+.jest_cache/    # (если используется Jest)
+
+### Build & Output ###
+dist/           # Vite production build
+dist-ssr/       # SSR build (если используется)
+*.tsbuildinfo   # TypeScript incremental builds
+
+### Environment ###
+.env
+.env.local
+.env.*.local    # Все локальные env-файлы
+!.env.example   # Исключение: можно хранить пример .env
+
+### IDE & Editor ###
+.vs/
+.vscode/*
+!.vscode/extensions.json  # Сохраняем настройки расширений
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+### OS & Temp Files ###
+.DS_Store
+Thumbs.db
+.temp/
+tmp/
+*.local
+
+### Testing & Coverage ###
+coverage/
+.nyc_output/
+jest.json
+cypress/screenshots/
+cypress/videos/
+
+### Development ###
+.history/       # VSCode Local History
+
+### Optional (если не используется) ###
+# .next/        # Next.js
+# .nuxt/        # Nuxt.js
+# serverless/   # Serverless Framework
+# .expo/       # Expo
